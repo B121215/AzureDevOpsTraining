@@ -1,0 +1,63 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "TIMESTAMP",
+				"type": "String"
+			},
+			{
+				"name": "DocumentServiceId",
+				"type": "String"
+			},
+			{
+				"name": "StatusCode",
+				"type": "String"
+			},
+			{
+				"name": "OperationType",
+				"type": "String"
+			},
+			{
+				"name": "ResourceType",
+				"type": "String"
+			},
+			{
+				"name": "DatabaseRid",
+				"type": "String"
+			},
+			{
+				"name": "CollectionRid",
+				"type": "String"
+			},
+			{
+				"name": "SampleCount",
+				"type": "String"
+			},
+			{
+				"name": "TotalMaxItemCount",
+				"type": "String"
+			},
+			{
+				"name": "TotalRequestCharge",
+				"type": "String"
+			}
+		]
+	}
+}
